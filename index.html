@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css.css">
+	<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="layout.js" type="text/javascript"></script>	
+<title>Animes</title>
+</head>
+<body>	
+	<div class="main" onload="progressbar()">
+		<div class="header" >Anime Episode Progress using JS</div>
+
+		<div class="animes" >
+		<div class="anime" data-index="1" >
+			<div class="img"><img src="images/gits.jpg"></div>
+			<div class="nome">Ghost in the Shell: SAC_2045</div>
+			<div class="progress">
+				<p class="subep" onclick="subep()" >&#10134;</p>
+				<p class="ep" value="2">2</p>
+				<p class="sumep"  onclick="sumep()" >&#10133;</p>
+				<p>/</p>
+				<p class="subeps" onclick="subeps()" >&#10134;</p>
+				<p class="eps" value="12">12</p>
+				<p class="sumeps" onclick="sumeps()" >&#10133;</p>
+			</div>
+			<div class="bar"> </div>
+		</div>
+
+		<div class="anime" data-index="2" >
+			<div class="img"><img src="images/casshern.jpg"></div>
+			<div class="nome">Neo Human Casshern</div>
+			<div class="progress">
+				<p class="subep" onclick="subep()" >&#10134;</p>
+				<p class="ep" value="2">2</p>
+				<p class="sumep"  onclick="sumep()" >&#10133;</p>
+				<p>/</p>
+				<p class="subeps" onclick="subeps()" >&#10134;</p>
+				<p class="eps" value="35">35</p>
+				<p class="sumeps" onclick="sumeps()" >&#10133;</p>
+			</div>
+			<div class="bar"> </div>
+		</div>
+
+		<div class="anime" data-index="3" >
+			<div class="img"><img src="images/harlock.jpg"></div>
+			<div class="nome">Space Pirate Captain Harlock</div>
+			<div class="progress">
+				<p class="subep" onclick="subep()" >&#10134;</p>
+				<p class="ep" value="7">7</p>
+				<p class="sumep"  onclick="sumep()" >&#10133;</p>
+				<p>/</p>
+				<p class="subeps" onclick="subeps()" >&#10134;</p>
+				<p class="eps" value="42">42</p>
+				<p class="sumeps" onclick="sumeps()" >&#10133;</p>
+			</div>
+			<div class="bar"> </div>
+		</div>
+
+		<div class="anime" data-index="4" >
+			<div class="img"><img src="images/catseye.jpg"></div>
+			<div class="nome">Cat's Eye</div>
+			<div class="progress">
+				<p class="subep" onclick="subep()" >&#10134;</p>
+				<p class="ep" value="2">2</p>
+				<p class="sumep"  onclick="sumep()" >&#10133;</p>
+				<p>/</p>
+				<p class="subeps" onclick="subeps()" >&#10134;</p>
+				<p class="eps" value="73">73</p>
+				<p class="sumeps" onclick="sumeps()" >&#10133;</p>
+			</div>
+			<div class="bar"> </div>
+		</div>
+
+		<div class="anime" data-index="5" >
+			<div class="img"><img src="images/urusei.jpg"></div>
+			<div class="nome">Urusei Yatsura</div>
+			<div class="progress">
+				<p class="subep" onclick="subep()" >&#10134;</p>
+				<p class="ep" value="23">23</p>
+				<p class="sumep"  onclick="sumep()" >&#10133;</p>
+				<p>/</p>
+				<p class="subeps" onclick="subeps()" >&#10134;</p>
+				<p class="eps" value="195">195</p>
+				<p class="sumeps" onclick="sumeps()" >&#10133;</p>
+			</div>
+			<div class="bar"> </div>
+		</div>
+
+		<div class="anime" data-index="6" >
+			<div class="img"><img src="images/w1.jpg"></div>
+			<div class="nome">Trigun Stampede</div>
+			<div class="progress">
+				<p class="subep" onclick="subep()" >&#10134;</p>
+				<p class="ep" value="7">7</p>
+				<p class="sumep"  onclick="sumep()" >&#10133;</p>
+				<p>/</p>
+				<p class="subeps" onclick="subeps()" >&#10134;</p>
+				<p class="eps" value="12">12</p>
+				<p class="sumeps" onclick="sumeps()" >&#10133;</p>
+			</div>
+			<div class="bar"> </div>
+		</div>
+
+		<div class="anime" data-index="7" >
+			<div class="img"><img src="images/w2.jpg"></div>
+			<div class="nome">Tomo-Chan is a Girl!</div>
+			<div class="progress">
+				<p class="subep" onclick="subep()" >&#10134;</p>
+				<p class="ep" value="8">8</p>
+				<p class="sumep"  onclick="sumep()" >&#10133;</p>
+				<p>/</p>
+				<p class="subeps" onclick="subeps()" >&#10134;</p>
+				<p class="eps" value="13">13</p>
+				<p class="sumeps" onclick="sumeps()" >&#10133;</p>
+			</div>
+			<div class="bar"> </div>
+		</div>
+
+		<div class="anime" data-index="8" >
+			<div class="img"><img src="images/w5.jpg"></div>
+			<div class="nome">Pokémon: Aim to Be a Pokémon Master</div>
+			<div class="progress">
+				<p class="subep" onclick="subep()" >&#10134;</p>
+				<p class="ep" value="7">7</p>
+				<p class="sumep"  onclick="sumep()" >&#10133;</p>
+				<p>/</p>
+				<p class="subeps" onclick="subeps()" >&#10134;</p>
+				<p class="eps" value="11">11</p>
+				<p class="sumeps" onclick="sumeps()" >&#10133;</p>
+			</div>
+			<div class="bar"> </div>
+		</div>
+
+		<div class="anime" data-index="9" >
+			<div class="img"><img src="images/w7.jpg"></div>
+			<div class="nome">Urusei Yatsura (2022)</div>
+			<div class="progress">
+				<p class="subep" onclick="subep()" >&#10134;</p>
+				<p class="ep" value="5">5</p>
+				<p class="sumep"  onclick="sumep()" >&#10133;</p>
+				<p>/</p>
+				<p class="subeps" onclick="subeps()" >&#10134;</p>
+				<p class="eps" value="23">23</p>
+				<p class="sumeps" onclick="sumeps()" >&#10133;</p>
+			</div>
+			<div class="bar"> </div>
+		</div>
+
+		<div class="anime" data-index="10" >
+			<div class="img"><img src="images/o1.jpg"></div>
+			<div class="nome">Aggretsuko</div>
+			<div class="progress">
+				<p class="subep" onclick="subep()" >&#10134;</p>
+				<p class="ep" value="1">1</p>
+				<p class="sumep"  onclick="sumep()" >&#10133;</p>
+				<p>/</p>
+				<p class="subeps" onclick="subeps()" >&#10134;</p>
+				<p class="eps" value="10">10</p>
+				<p class="sumeps" onclick="sumeps()" >&#10133;</p>
+			</div>
+			<div class="bar"> </div>
+		</div>
+
+		</div>	
+	</div>
+
+</body>
+</html>
