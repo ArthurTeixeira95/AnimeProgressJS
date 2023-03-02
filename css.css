@@ -31,7 +31,9 @@ body{
 	float: left;
 	font-size: 40px;
 	line-height: 50px;
-	margin-bottom: 20px;
+	padding-bottom: 20px;
+	background: #118dff;
+	color: #fff;
 }
 
 .main .animes{
